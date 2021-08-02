@@ -38,14 +38,8 @@ public class Panel_protocolos extends javax.swing.JFrame {
         btn_Regresar = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         rSPanelsSlider1 = new rojerusan.RSPanelsSlider();
-        panel_CAN = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel11 = new javax.swing.JLabel();
-        btnSI_protocolos = new javax.swing.JButton();
-        btnNO_protocolos = new javax.swing.JButton();
+        Panel_Inicial_PROTOCOLOS = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
         panel_VPW = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         panel_ISO = new javax.swing.JPanel();
@@ -59,8 +53,22 @@ public class Panel_protocolos extends javax.swing.JFrame {
         panel_CCD = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        Panel_Inicial_PROTOCOLOS = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
+        panel_CAN = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel11 = new javax.swing.JLabel();
+        btnSI_protocolos = new javax.swing.JButton();
+        btnNO_protocolos = new javax.swing.JButton();
+        PanelNO_CAN = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        btnSI_protocolos1 = new javax.swing.JButton();
+        btnNO_protocolos1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -134,89 +142,35 @@ public class Panel_protocolos extends javax.swing.JFrame {
         jPanel2.add(btn_Regresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 145, -1));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Domain/IMAGES/black_protcols.jpg"))); // NOI18N
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 520));
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 520));
 
         rSPanelsSlider1.setBackground(new java.awt.Color(255, 255, 255));
 
-        panel_CAN.setName("panel_CAN"); // NOI18N
+        Panel_Inicial_PROTOCOLOS.setBackground(new java.awt.Color(255, 255, 255));
+        Panel_Inicial_PROTOCOLOS.setName("Panel_inicial_PROTOCOLOS"); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("INFORMACION PROTOCOLO CAN");
+        jLabel12.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel12.setText("SELECCIONA EL PROTOCOLO QUE DESEAS DIAGNOSTICAR");
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Domain/IMAGES/PCB_CJ4R.png"))); // NOI18N
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("NO.PARTE: XXXXXXX\nNO.LOCALIZACION: U7\nALIAS: ADG333");
-        jScrollPane1.setViewportView(jTextArea1);
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel11.setText("Se soluciono cambiando este componente?");
-
-        btnSI_protocolos.setBackground(new java.awt.Color(0, 153, 0));
-        btnSI_protocolos.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        btnSI_protocolos.setText("SI");
-        btnSI_protocolos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSI_protocolosActionPerformed(evt);
-            }
-        });
-
-        btnNO_protocolos.setBackground(new java.awt.Color(204, 0, 0));
-        btnNO_protocolos.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        btnNO_protocolos.setText("NO");
-
-        javax.swing.GroupLayout panel_CANLayout = new javax.swing.GroupLayout(panel_CAN);
-        panel_CAN.setLayout(panel_CANLayout);
-        panel_CANLayout.setHorizontalGroup(
-            panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_CANLayout.createSequentialGroup()
-                .addGroup(panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_CANLayout.createSequentialGroup()
-                        .addGap(155, 155, 155)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panel_CANLayout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addGroup(panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panel_CANLayout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addComponent(jScrollPane1))
-                            .addGroup(panel_CANLayout.createSequentialGroup()
-                                .addGroup(panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(panel_CANLayout.createSequentialGroup()
-                                        .addGap(84, 84, 84)
-                                        .addComponent(btnSI_protocolos)
-                                        .addGap(32, 32, 32)
-                                        .addComponent(btnNO_protocolos))
-                                    .addGroup(panel_CANLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel11)))
-                                .addGap(0, 12, Short.MAX_VALUE)))))
-                .addContainerGap())
+        javax.swing.GroupLayout Panel_Inicial_PROTOCOLOSLayout = new javax.swing.GroupLayout(Panel_Inicial_PROTOCOLOS);
+        Panel_Inicial_PROTOCOLOS.setLayout(Panel_Inicial_PROTOCOLOSLayout);
+        Panel_Inicial_PROTOCOLOSLayout.setHorizontalGroup(
+            Panel_Inicial_PROTOCOLOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel_Inicial_PROTOCOLOSLayout.createSequentialGroup()
+                .addContainerGap(143, Short.MAX_VALUE)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(94, 94, 94))
         );
-        panel_CANLayout.setVerticalGroup(
-            panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_CANLayout.createSequentialGroup()
+        Panel_Inicial_PROTOCOLOSLayout.setVerticalGroup(
+            Panel_Inicial_PROTOCOLOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_Inicial_PROTOCOLOSLayout.createSequentialGroup()
                 .addGap(24, 24, 24)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_CANLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panel_CANLayout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(53, 53, 53)
-                        .addComponent(jLabel11)
-                        .addGap(18, 18, 18)
-                        .addGroup(panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnSI_protocolos)
-                            .addComponent(btnNO_protocolos))))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(58, Short.MAX_VALUE))
         );
 
-        rSPanelsSlider1.add(panel_CAN, "card3");
+        rSPanelsSlider1.add(Panel_Inicial_PROTOCOLOS, "card9");
 
         panel_VPW.setName("panel_VPW"); // NOI18N
 
@@ -231,7 +185,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
             .addGroup(panel_VPWLayout.createSequentialGroup()
                 .addGap(79, 79, 79)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(521, Short.MAX_VALUE))
+                .addContainerGap(523, Short.MAX_VALUE))
         );
         panel_VPWLayout.setVerticalGroup(
             panel_VPWLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,7 +210,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
             .addGroup(panel_ISOLayout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(505, Short.MAX_VALUE))
+                .addContainerGap(507, Short.MAX_VALUE))
         );
         panel_ISOLayout.setVerticalGroup(
             panel_ISOLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -281,7 +235,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
             .addGroup(panel_PWMLayout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(505, Short.MAX_VALUE))
+                .addContainerGap(507, Short.MAX_VALUE))
         );
         panel_PWMLayout.setVerticalGroup(
             panel_PWMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -306,7 +260,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
             .addGroup(panel_SCILayout.createSequentialGroup()
                 .addGap(95, 95, 95)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(505, Short.MAX_VALUE))
+                .addContainerGap(507, Short.MAX_VALUE))
         );
         panel_SCILayout.setVerticalGroup(
             panel_SCILayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -329,7 +283,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
         panel_TODOSLayout.setHorizontalGroup(
             panel_TODOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_TODOSLayout.createSequentialGroup()
-                .addContainerGap(490, Short.MAX_VALUE)
+                .addContainerGap(492, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(52, 52, 52))
         );
@@ -363,7 +317,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
                     .addGroup(panel_CCDLayout.createSequentialGroup()
                         .addGap(155, 155, 155)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 373, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(271, Short.MAX_VALUE))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
         panel_CCDLayout.setVerticalGroup(
             panel_CCDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -377,16 +331,162 @@ public class Panel_protocolos extends javax.swing.JFrame {
 
         rSPanelsSlider1.add(panel_CCD, "card2");
 
-        Panel_Inicial_PROTOCOLOS.setBackground(new java.awt.Color(255, 255, 255));
-        Panel_Inicial_PROTOCOLOS.setName("Panel_inicial_PROTOCOLOS"); // NOI18N
-        Panel_Inicial_PROTOCOLOS.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panel_CAN.setName("panel_CAN"); // NOI18N
 
-        jLabel12.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel12.setText("SELECCIONA EL PROTOCOLO QUE DESEAS DIAGNOSTICAR");
-        Panel_Inicial_PROTOCOLOS.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 730, 250));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("INFORMACION PROTOCOLO CAN");
 
-        rSPanelsSlider1.add(Panel_Inicial_PROTOCOLOS, "card9");
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Domain/IMAGES/PCB_CJ4R-ADG333.png"))); // NOI18N
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("REMPLAZA:\nNO.PARTE:11-0056-0000\nREFERENCIA PCB: U7\nDESCRIPCION: ADG333ABR SWITCH ANALOGO ");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setText("Se soluciono cambiando este componente?");
+
+        btnSI_protocolos.setBackground(new java.awt.Color(0, 153, 0));
+        btnSI_protocolos.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        btnSI_protocolos.setText("SI");
+        btnSI_protocolos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSI_protocolosActionPerformed(evt);
+            }
+        });
+
+        btnNO_protocolos.setBackground(new java.awt.Color(204, 0, 0));
+        btnNO_protocolos.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        btnNO_protocolos.setText("NO");
+        btnNO_protocolos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNO_protocolosActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panel_CANLayout = new javax.swing.GroupLayout(panel_CAN);
+        panel_CAN.setLayout(panel_CANLayout);
+        panel_CANLayout.setHorizontalGroup(
+            panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_CANLayout.createSequentialGroup()
+                .addComponent(jLabel9)
+                .addGroup(panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_CANLayout.createSequentialGroup()
+                        .addGap(89, 89, 89)
+                        .addComponent(btnSI_protocolos)
+                        .addGap(39, 39, 39)
+                        .addComponent(btnNO_protocolos)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_CANLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(panel_CANLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel11)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(panel_CANLayout.createSequentialGroup()
+                .addGap(155, 155, 155)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panel_CANLayout.setVerticalGroup(
+            panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel_CANLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_CANLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 413, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panel_CANLayout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(panel_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnSI_protocolos)
+                            .addComponent(btnNO_protocolos))))
+                .addContainerGap(36, Short.MAX_VALUE))
+        );
+
+        rSPanelsSlider1.add(panel_CAN, "card3");
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Domain/IMAGES/PCB_CJ4R-U3.png"))); // NOI18N
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("REMPLAZA:\nNO.PARTE:11-0056-0000\nREFERENCIA PCB: U3\nDESCRIPCION: MCP2551-I/SN CAN TRANSCEIVER ANALOGO ");
+        jScrollPane2.setViewportView(jTextArea2);
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("INFORMACION PROTOCOLO CAN");
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel15.setText("Se soluciono cambiando este componente?");
+
+        btnSI_protocolos1.setBackground(new java.awt.Color(0, 153, 0));
+        btnSI_protocolos1.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        btnSI_protocolos1.setText("SI");
+        btnSI_protocolos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSI_protocolos1ActionPerformed(evt);
+            }
+        });
+
+        btnNO_protocolos1.setBackground(new java.awt.Color(204, 0, 0));
+        btnNO_protocolos1.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        btnNO_protocolos1.setText("NO");
+
+        javax.swing.GroupLayout PanelNO_CANLayout = new javax.swing.GroupLayout(PanelNO_CAN);
+        PanelNO_CAN.setLayout(PanelNO_CANLayout);
+        PanelNO_CANLayout.setHorizontalGroup(
+            PanelNO_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelNO_CANLayout.createSequentialGroup()
+                .addGroup(PanelNO_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelNO_CANLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 661, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(PanelNO_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PanelNO_CANLayout.createSequentialGroup()
+                                .addGap(29, 29, 29)
+                                .addGroup(PanelNO_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(PanelNO_CANLayout.createSequentialGroup()
+                                        .addGap(59, 59, 59)
+                                        .addComponent(btnSI_protocolos1)
+                                        .addGap(44, 44, 44)
+                                        .addComponent(btnNO_protocolos1))))
+                            .addGroup(PanelNO_CANLayout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel15))))
+                    .addGroup(PanelNO_CANLayout.createSequentialGroup()
+                        .addGap(147, 147, 147)
+                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(9, 9, 9))
+        );
+        PanelNO_CANLayout.setVerticalGroup(
+            PanelNO_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelNO_CANLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(PanelNO_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelNO_CANLayout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(61, 61, 61)
+                        .addComponent(jLabel15)
+                        .addGap(36, 36, 36)
+                        .addGroup(PanelNO_CANLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnNO_protocolos1)
+                            .addComponent(btnSI_protocolos1)))
+                    .addComponent(jLabel13))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        rSPanelsSlider1.add(PanelNO_CAN, "card10");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -400,7 +500,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(rSPanelsSlider1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(rSPanelsSlider1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -570,6 +670,17 @@ public class Panel_protocolos extends javax.swing.JFrame {
     private void btnSI_protocolosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSI_protocolosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSI_protocolosActionPerformed
+
+    private void btnSI_protocolos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSI_protocolos1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSI_protocolos1ActionPerformed
+
+    private void btnNO_protocolosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNO_protocolosActionPerformed
+        if(!this.btnNO_protocolos.isSelected()){
+            panel_CAN.setVisible(false);
+        PanelNO_CAN.setVisible(true);
+        }
+    }//GEN-LAST:event_btnNO_protocolosActionPerformed
     
 
     /**
@@ -611,9 +722,12 @@ public class Panel_protocolos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel PanelNO_CAN;
     private javax.swing.JPanel Panel_Inicial_PROTOCOLOS;
     private javax.swing.JButton btnNO_protocolos;
+    private javax.swing.JButton btnNO_protocolos1;
     private javax.swing.JButton btnSI_protocolos;
+    private javax.swing.JButton btnSI_protocolos1;
     private javax.swing.JButton btn_Regresar;
     private javax.swing.JButton btn_can;
     private javax.swing.JButton btn_ccd;
@@ -626,6 +740,9 @@ public class Panel_protocolos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -637,7 +754,9 @@ public class Panel_protocolos extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JPanel panel_CAN;
     private javax.swing.JPanel panel_CCD;
     private javax.swing.JPanel panel_ISO;
