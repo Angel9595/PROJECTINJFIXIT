@@ -7,7 +7,7 @@ package Domain;
 
 /**
  *
- * @author Raul Terrazas
+ * @author Luis Angel Mendez
  */
 public class panel_display extends javax.swing.JFrame {
 

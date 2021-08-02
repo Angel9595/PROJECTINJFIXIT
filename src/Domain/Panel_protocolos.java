@@ -4,7 +4,7 @@ import java.awt.Container;
 import javax.swing.*;
 /**
  *
- * @author Raul Terrazas
+ * @author Luis Angel Mendez
  */
 public class Panel_protocolos extends javax.swing.JFrame {
 
@@ -676,7 +676,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
       byte opcion = 0;
    do{
       opcion=Byte.parseByte(JOptionPane.showInputDialog(
-      "***SELECCIONA QUE DESAR HACER***\n"
+      "***SELECCIONA QUE DESEAS HACER***\n"
     + "1. Volver al menu principal\n"
     + "2. Volver al Menu Protocolos\n"
     + "3. Documentar Mi Falla\n"
@@ -709,7 +709,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
        byte opcion = 0;
    do{
       opcion=Byte.parseByte(JOptionPane.showInputDialog(
-      "***SELECCIONA QUE DESAR HACER***\n"
+      "***SELECCIONA QUE DESEAS HACER***\n"
     + "1. Volver al menu principal\n"
     + "2. Volver al Menu Protocolos\n"
     + "3. Documentar Mi Falla\n"
