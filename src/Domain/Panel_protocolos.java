@@ -439,6 +439,11 @@ public class Panel_protocolos extends javax.swing.JFrame {
         btnNO_protocolos1.setBackground(new java.awt.Color(204, 0, 0));
         btnNO_protocolos1.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         btnNO_protocolos1.setText("NO");
+        btnNO_protocolos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNO_protocolos1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PanelNO_CANLayout = new javax.swing.GroupLayout(PanelNO_CAN);
         PanelNO_CAN.setLayout(PanelNO_CANLayout);
@@ -500,7 +505,7 @@ public class Panel_protocolos extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(rSPanelsSlider1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(rSPanelsSlider1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -668,11 +673,70 @@ public class Panel_protocolos extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_todos1ActionPerformed
 
     private void btnSI_protocolosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSI_protocolosActionPerformed
-        // TODO add your handling code here:
+      byte opcion = 0;
+   do{
+      opcion=Byte.parseByte(JOptionPane.showInputDialog(
+      "***SELECCIONA QUE DESAR HACER***\n"
+    + "1. Volver al menu principal\n"
+    + "2. Volver al Menu Protocolos\n"
+    + "3. Documentar Mi Falla\n"
+    + "4. Salir del Programa\n"));
+      switch(opcion){
+         case 1:
+             panel_main panel_main = new panel_main();
+             panel_main.setVisible(true);
+             dispose();
+            break;
+         case 2:
+             Panel_protocolos panelprotocolos = new Panel_protocolos();
+             panelprotocolos.setVisible(true);
+             dispose();
+            break;
+         case 3:
+            JOptionPane.showMessageDialog(null, "Docmumentacion de falla esta en trabajo por el momento");
+            break;
+         case 4:
+             System.exit(0);
+         default:
+            JOptionPane.showMessageDialog(null, "Opcion Invalida");
+            break;
+            
+      }
+   }while(opcion!=opcion);   
     }//GEN-LAST:event_btnSI_protocolosActionPerformed
 
     private void btnSI_protocolos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSI_protocolos1ActionPerformed
-        // TODO add your handling code here:
+       byte opcion = 0;
+   do{
+      opcion=Byte.parseByte(JOptionPane.showInputDialog(
+      "***SELECCIONA QUE DESAR HACER***\n"
+    + "1. Volver al menu principal\n"
+    + "2. Volver al Menu Protocolos\n"
+    + "3. Documentar Mi Falla\n"
+    + "4. Salir del Programa\n"));
+      switch(opcion){
+         case 1:
+             panel_main panel_main = new panel_main();
+             panel_main.setVisible(true);
+             dispose();
+            break;
+         case 2:
+             Panel_protocolos panelprotocolos = new Panel_protocolos();
+             panelprotocolos.setVisible(true);
+             dispose();
+            break;
+         case 3:
+            JOptionPane.showMessageDialog(null, "Docmumentacion de falla esta en trabajo por el momento");
+            break;
+         case 4:
+             System.exit(0);
+         default:
+            JOptionPane.showMessageDialog(null, "Opcion Invalida");
+            break;
+            
+      }
+   }while(opcion!=opcion);   
+            
     }//GEN-LAST:event_btnSI_protocolos1ActionPerformed
 
     private void btnNO_protocolosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNO_protocolosActionPerformed
@@ -681,6 +745,12 @@ public class Panel_protocolos extends javax.swing.JFrame {
         PanelNO_CAN.setVisible(true);
         }
     }//GEN-LAST:event_btnNO_protocolosActionPerformed
+
+    private void btnNO_protocolos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNO_protocolos1ActionPerformed
+       JOptionPane.showMessageDialog(null, "!LO SENTIMOS SE TERMINARON LAS OPCIONES¡ \n"
+    + "Contacta un Tecnico Especialista ");
+       System.exit(0);
+    }//GEN-LAST:event_btnNO_protocolos1ActionPerformed
     
 
     /**

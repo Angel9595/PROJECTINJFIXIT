@@ -224,7 +224,8 @@ public class panel_main extends javax.swing.JFrame {
 
     private void Btn_ProtocolosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_ProtocolosActionPerformed
         Panel_protocolos  panelprotocolos = new Panel_protocolos();
-        JOptionPane.showMessageDialog(this, "!Asegurate que no existan cortos circuitos ni soladuras frias antes de remplazar un componente¡");
+        JOptionPane.showMessageDialog(this, "!Asegurate que no existan cortos circuitos "
+                + "\n"+"ni soladuras frias antes de remplazar un componente¡");
         panelprotocolos.setVisible(true);
         dispose();
     }//GEN-LAST:event_Btn_ProtocolosActionPerformed

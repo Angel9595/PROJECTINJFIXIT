@@ -783,6 +783,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="NO"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNO_protocolos1ActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
