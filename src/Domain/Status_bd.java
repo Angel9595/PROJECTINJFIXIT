@@ -26,7 +26,7 @@ public class Status_bd extends javax.swing.JFrame {
      // Funcion que va conectarse a mi bd de mysql
     public void conector() {
         // Reseteamos a null la conexion a la bd
-        conexion=null;
+         conexion=null;
         try{
             Class.forName(driver);
             // Nos conectamos a la bd

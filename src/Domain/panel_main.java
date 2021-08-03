@@ -231,7 +231,9 @@ public class panel_main extends javax.swing.JFrame {
     }//GEN-LAST:event_Btn_ProtocolosActionPerformed
 
     private void btn_DOCFALLAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_DOCFALLAActionPerformed
-        
+         Panel_documentacion paneld = new Panel_documentacion();
+        paneld.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btn_DOCFALLAActionPerformed
 
     private void Btn_teclado2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_teclado2ActionPerformed

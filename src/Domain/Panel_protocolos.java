@@ -7,10 +7,43 @@ import javax.swing.*;
  * @author Luis Angel Mendez
  */
 public class Panel_protocolos extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Panel_protcolosnew
-     */
+    
+    
+  public void mostrarOpciones(){
+ byte opcion = 0;
+   do{
+      opcion=Byte.parseByte(JOptionPane.showInputDialog(
+      "***SELECCIONA QUE DESEAS HACER***\n"
+    + "1. Volver al menu principal\n"
+    + "2. Volver al Menu Protocolos\n"
+    + "3. Documentar Mi Falla\n"
+    + "4. Salir del Programa\n"));
+      switch(opcion){
+         case 1:
+             panel_main panel_main = new panel_main();
+             panel_main.setVisible(true);
+             dispose();
+            break;
+         case 2:
+             Panel_protocolos panelprotocolos = new Panel_protocolos();
+             panelprotocolos.setVisible(true);
+             dispose();
+            break;
+         case 3:
+             Panel_documentacion paneld = new Panel_documentacion();
+        paneld.setVisible(true);
+        dispose();
+            break;
+         case 4:
+             System.exit(0);
+         default:
+            JOptionPane.showMessageDialog(null, "Opcion Invalida");
+            break;
+            
+      }
+   }while(opcion!=opcion);  
+}
+    
     public Panel_protocolos() {
         initComponents();
         this.setLocationRelativeTo(this);
@@ -673,70 +706,11 @@ public class Panel_protocolos extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_todos1ActionPerformed
 
     private void btnSI_protocolosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSI_protocolosActionPerformed
-      byte opcion = 0;
-   do{
-      opcion=Byte.parseByte(JOptionPane.showInputDialog(
-      "***SELECCIONA QUE DESEAS HACER***\n"
-    + "1. Volver al menu principal\n"
-    + "2. Volver al Menu Protocolos\n"
-    + "3. Documentar Mi Falla\n"
-    + "4. Salir del Programa\n"));
-      switch(opcion){
-         case 1:
-             panel_main panel_main = new panel_main();
-             panel_main.setVisible(true);
-             dispose();
-            break;
-         case 2:
-             Panel_protocolos panelprotocolos = new Panel_protocolos();
-             panelprotocolos.setVisible(true);
-             dispose();
-            break;
-         case 3:
-            JOptionPane.showMessageDialog(null, "Docmumentacion de falla esta en trabajo por el momento");
-            break;
-         case 4:
-             System.exit(0);
-         default:
-            JOptionPane.showMessageDialog(null, "Opcion Invalida");
-            break;
-            
-      }
-   }while(opcion!=opcion);   
+     mostrarOpciones();
     }//GEN-LAST:event_btnSI_protocolosActionPerformed
 
     private void btnSI_protocolos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSI_protocolos1ActionPerformed
-       byte opcion = 0;
-   do{
-      opcion=Byte.parseByte(JOptionPane.showInputDialog(
-      "***SELECCIONA QUE DESEAS HACER***\n"
-    + "1. Volver al menu principal\n"
-    + "2. Volver al Menu Protocolos\n"
-    + "3. Documentar Mi Falla\n"
-    + "4. Salir del Programa\n"));
-      switch(opcion){
-         case 1:
-             panel_main panel_main = new panel_main();
-             panel_main.setVisible(true);
-             dispose();
-            break;
-         case 2:
-             Panel_protocolos panelprotocolos = new Panel_protocolos();
-             panelprotocolos.setVisible(true);
-             dispose();
-            break;
-         case 3:
-            JOptionPane.showMessageDialog(null, "Docmumentacion de falla esta en trabajo por el momento");
-            break;
-         case 4:
-             System.exit(0);
-         default:
-            JOptionPane.showMessageDialog(null, "Opcion Invalida");
-            break;
-            
-      }
-   }while(opcion!=opcion);   
-            
+       mostrarOpciones();
     }//GEN-LAST:event_btnSI_protocolos1ActionPerformed
 
     private void btnNO_protocolosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNO_protocolosActionPerformed
