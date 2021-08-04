@@ -11,9 +11,7 @@ package Domain;
  */
 public class panel_display extends javax.swing.JFrame {
 
-    /**
-     * Creates new form panel_display
-     */
+    
     public panel_display() {
         initComponents();
     }
