@@ -9,12 +9,12 @@ import javax.swing.JOptionPane;
 
 public class Panel_documentacion extends javax.swing.JFrame {
     
-    private static final String DRIVER="com.mysql.jdbc.Driver";
+    private static final String DRIVER ="com.mysql.jdbc.Driver";
     private static final String USER="root";
     private static final String PASSWORD="mysql97";
     private static final String URL="jdbc:mysql://localhost/reportes_bd?characterEncoding=latin1";  
     
-    PreparedStatement ps;
+    
     ResultSet rs;
     
     
@@ -44,7 +44,8 @@ public class Panel_documentacion extends javax.swing.JFrame {
        txt_nomusuario.setText(null);
        cbx_dep.setSelectedIndex(0);
    }
-    public Panel_documentacion() {
+   
+   public Panel_documentacion() {
         initComponents();
     }
     @SuppressWarnings("unchecked")
@@ -248,36 +249,59 @@ public class Panel_documentacion extends javax.swing.JFrame {
     }//GEN-LAST:event_cbx_departamentoeqActionPerformed
 
     private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
-       Connection con = null;
+   Connection con  = getConnection();
+   PreparedStatement ps = null;
+    PreparedStatement ps2 = null;
+    PreparedStatement ps3 = null;
         try{
-           con  = getConnection();
-        ps= con.prepareStatement("INSERT INTO equipo (nombre_equipo,num_serie,departamento)VALUES(?,?,?)");
-        ps.setString(1, cbx_modeloeq.getSelectedItem().toString());
+            con.setAutoCommit(false);     
+        ps=con.prepareStatement("INSERT INTO reportes_bd.equipo (nombre_equipo,num_serie,departamento)VALUES(?,?,?)");
+        ps2=con.prepareStatement("INSERT INTO reportes_bd.fallas (descripcion,solucion)VALUES(?,?)");
+        ps3=con.prepareStatement("INSERT INTO reportes_bd.usuario (nombre,departamento)VALUES(?,?)");
+        ps.setString(1,cbx_modeloeq.getSelectedItem().toString());
         ps.setString(2,txt_numserie.getText());
-        ps.setString(3, cbx_departamentoeq.getSelectedItem().toString());
-        ps= con.prepareStatement("INSERT INTO fallas (descripcion,solucion)VALUES(?,?)");
-        ps.setString(1, txtarea_descfalla.getText());
-        ps.setString(1, txtarea_solucion.getText());
-        ps=con.prepareStatement("INSERT INTO usuario (nombre,departamento)VALUES(?,?)");
-        ps.setString(1,txt_nomusuario.getText());
-        ps.setString(2, cbx_dep.getSelectedItem().toString());
+        ps.setString(3,cbx_departamentoeq.getSelectedItem().toString());
+        ps.executeUpdate();
+        ps2.setString(1,txtarea_descfalla.getText());
+        ps2.setString(2,txtarea_solucion.getText());
+        ps2.executeUpdate();
+        ps3.setString(1,txt_nomusuario.getText());
+        ps3.setString(2,cbx_dep.getSelectedItem().toString());
+        ps3.executeUpdate();
         
-        int  res = ps.executeUpdate();
-        if(res > 0){
+        con.commit();
+        
+           int  res = ps.executeUpdate();
+        int  res2 = ps2.executeUpdate();
+        int  res3 = ps3.executeUpdate();
+        if(res > 0&&res2>0&&res3>0){
             JOptionPane.showMessageDialog(null, "Se guardo Reporte Exitosamente");
-            limpiarCajas();
         }else{
          JOptionPane.showMessageDialog(null, "Error al guardar reporte");
-         limpiarCajas();
         }
-        con.close();
-        
-        }catch(Exception e){
-        
-        System.err.println(e);
+        }catch(SQLException ex){
+        System.err.println("ERROR: " + ex.getMessage());
+        if(con!=null)
+            {
+                System.out.println("Rollback");
+               try {
+                   //deshace todos los cambios realizados en los datos
+                    con.rollback();
+                } catch (SQLException ex1) {
+                     System.err.println( "No se pudo deshacer" + ex1.getMessage() );    
+                 }
+             }  
+        }finally{
+           System.out.println( "cierra conexion a la base de datos" );    
+            try {
+               if(ps!=null) ps.close();                
+                if(ps2!=null) ps2.close();                
+                if(ps3!=null) ps3.close();  
+               if(con!=null) con.close();
+            } catch (SQLException ex) {
+                System.err.println( ex.getMessage() );    
+            }
         }
-       
-        
         
     }//GEN-LAST:event_btn_guardarActionPerformed
 

@@ -72,11 +72,11 @@ public class Conexion extends javax.swing.JFrame {
        PreparedStatement ps;
        ResultSet res;
        
-       ps = con.prepareStatement("SELECT * FROM equipo");
+       ps = con.prepareStatement("SELECT * FROM usuario");
        res = ps.executeQuery();
        
        if(res.next()){
-       JOptionPane.showMessageDialog(null, res.getInt("num_serie"));
+       JOptionPane.showMessageDialog(null, res.getInt("nombre"));
        }else {
        JOptionPane.showMessageDialog(null, "no existen Datos");
        }
